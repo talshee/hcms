@@ -1,0 +1,1 @@
+var patientRegistrationApp = angular.module("patientRegistrationApp", []);

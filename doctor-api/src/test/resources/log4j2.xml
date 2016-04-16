@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="ERROR" verbose="true" packages="*">
+	<!--
+	Note: I'm using -DLog4jContextSelector=org.apache.logging.log4j.core.async.AsyncLoggerContextSelector
+	to make all loggers async
+	 -->
+
+	<Appenders>
+		
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+		</Console>
+		
+		<!-- File name="logstashFile" fileName="c:/Users/ramanakr/dockerworkspace/elasticsearch/logs/app.log">
+	      <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+	    </File-->
+		
+
+	</Appenders>
+	
+	<Loggers>
+	
+		<Root level="INFO">
+			<AppenderRef ref="Console" />
+			<AppenderRef ref="logstashFile"/>
+		</Root>
+		
+		<Logger name="com.commbank.cep.allocator.testharness" level="DEBUG" additivity="true">
+	      	<AppenderRef ref="Console"/>
+	    </Logger>
+		
+		 <Logger name="org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor" level="ERROR" additivity="true">
+	      	<AppenderRef ref="Console"/>
+	    </Logger>
+		
+		
+		<Logger name="org.springframework.http" level="ERROR" additivity="true">
+	      	<AppenderRef ref="Console"/>
+	    </Logger>
+	</Loggers>
+</Configuration>

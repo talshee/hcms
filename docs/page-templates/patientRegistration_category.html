@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="patientRegistrationApp">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../scripts/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+  <script src="../scripts/jquery-2.2.0.js"></script>
+  <script src="../scripts/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+  
+  <script src="../scripts/angular.min.js"></script>
+  <script src="patientRegistrationApp.js"></script>
+  <script src="patientRegistrationCtrl.js"></script>
+  
+</head>
+<body>
+
+  <div class="container" ng-controller="patientRegistrationCtlr">
+    <h2>Category</h2>
+    <form class="form-horizontal" role="form">
+
+      <div class="form-group">
+        
+        <select class="form-control" id="sel1" ng-model="category">
+          <option>Delivery</option>
+          <option>Sick - Emergency</option>
+          <option>Sick - Casual</option>
+          <option>Injury - Emergency</option>
+          <option>Injury - Casual</option>
+          <option>Appointment - Dentist</option>
+          <option>Appointment - Gastroscopy</option>
+
+        </select>
+      </div>
+
+
+
+    </form>
+  </div>
+
+
+</body>
+</html>

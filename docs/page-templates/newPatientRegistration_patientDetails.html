@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../scripts/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+  
+  <script src="../scripts/jquery-2.2.0.js"></script>
+  <script src="../scripts/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+  
+  <script>
+    function toMedicalHistory() {
+      window.location.assign('newPatientRegistration_medicalHistory.html');
+    }
+
+	function toStartPage() {
+      window.location.assign('startPage.html');
+    }
+  
+  </script>
+</head>
+<body>
+
+  <div class="container">
+	<div class="jumbotron">
+		<h1>Mauritius Health Care System</h1>
+		<h2>New Patient Registration - Patient Details</h2>
+	</div>
+  
+    
+    <form class="form-horizontal" role="form">
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="medicareId">Medicare Id:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="medicareId" placeholder="Enter MedicareId">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="firstName">First Name:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="firstName" placeholder="Enter First Name">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="middleName">Middle Name:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="middleName" placeholder="Enter Middle Name">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="lastName">Last Name:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="lastName" placeholder="Enter Last Name">
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="addressLine1">Address Line 1:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="addressLine1" placeholder="Enter Address Line 1">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="addressLine2">Address Line 2:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="addressLine2" placeholder="Enter Address Line 2">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="suburb">Suburb:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="suburb" placeholder="Suburb">
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="state">State:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="state" placeholder="State">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="homeContact">Home Contact:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="homeContact" placeholder="Home Contact">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="mobileContact">Mobile Contact:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="mobileContact" placeholder="Mobile Contact">
+        </div>
+      </div>
+
+    </form>
+  </div>
+  
+  
+  <div class="container">
+	<p align="center">
+		<button type="button" class="btn btn-info btn-lg" id="patientRegistration" onclick="toMedicalHistory()">Medical History</button>
+	
+		<button type="button" class="btn btn-lg btn-danger" id="cancel" onclick="toStartPage()">Cancel</button>
+	</p>
+  
+  </div>
+
+</body>
+</html>

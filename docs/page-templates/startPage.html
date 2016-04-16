@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../scripts/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+  
+  <script src="../scripts/jquery-2.2.0.js"></script>
+  <script src="../scripts/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+  <script>
+    function nextPage(id) {
+      console.log( "You clicked a paragraph!" );
+      
+    }
+  </script>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="jumbotron">
+	<h1>Mauritius Health Care System</h1>
+	<p>Choose a service</p>
+  </div>
+
+
+  <button type="button" class="btn btn-info btn-lg" id="patientRegistration">Patient Registration</button>
+  <button type="button" class="btn btn-info btn-lg" id="staffManagement">Staff Management</button>
+  <button type="button" class="btn btn-info btn-lg" id="medicalSuppliesManagement">Medical Supplies Management</button>
+  <button type="button" class="btn btn-info btn-lg" id="outbreaks">Outbreaks</button>
+  <button type="button" class="btn btn-info btn-lg" id="stats">Statistics</button>
+</div>
+
+ <script type="text/javascript">
+
+    $(document).ready(function() {
+        $('button').on("click", function() {
+          window.location.assign($(this).attr('id')+".html");
+        });
+
+    });
+ </script>
+
+</body>
+</html>

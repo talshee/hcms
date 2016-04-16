@@ -1,0 +1,17 @@
+# Maven
+target/
+
+
+# Eclipse
+/build/
+bin/
+.settings/
+*~
+*.orig
+*.new
+.idea/
+*.iml
+*.ipr
+*.cache
+*.classpath
+*.project

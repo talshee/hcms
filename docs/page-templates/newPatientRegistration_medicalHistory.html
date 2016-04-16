@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../scripts/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+  <script src="../scripts/jquery-2.2.0.js"></script>
+  <script src="../scripts/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+  
+  <script>
+	function toStartPage() {
+      window.location.assign('startPage.html');
+    }
+  </script>
+  
+</head>
+<body>
+
+   <div class="container">
+		<div class="jumbotron">
+			<h1>Mauritius Health Care System</h1>
+			<h2>New Patient Registration - Medical History</h2>
+		</div>
+	</div>
+
+	<div class="container">
+	<div class="col-md-10">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Date Symptoms Appeared</th>
+				<th>Date of Diagnosis</th>
+				<th>Date of Treatment</th>
+                <th>Disease/Condition</th>
+                <th>Treatment/Medication</th>
+				<th>Doctor</th>
+				<th>Comments</th>
+				<th>Remove</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Jan 2016</td>
+                <td>Feb 2016</td>
+                <td>Feb 2016</td>
+				<td>Pregnant</td>
+                <td></td>
+				<td>N Athyde</td>
+                <td>Sonogram and analysis of urine samples</td>
+				<td><button type="button" class="btn btn-sm btn-danger" id="item1" onclick="removeItem()">Remove</button></td>
+              </tr>
+            
+            </tbody>
+          </table>
+        </div>
+	</div>
+	
+	
+    <div class="container">
+	
+		<form class="form-horizontal" role="form">
+
+		  <div class="form-group">
+			<label class="control-label col-sm-2" for="date">Date Symptoms Appeared:</label>
+			<div class="col-sm-10">
+			  <input type="text" class="form-control" id="DateSymtomsAppeared" placeholder="Date symptoms appeared">
+			</div>
+		  </div>
+		  
+		  <div class="form-group">
+			<label class="control-label col-sm-2" for="date">Date of Diagnosis:</label>
+			<div class="col-sm-10">
+			  <input type="text" class="form-control" id="DateOfDiagnosis" placeholder="Date of Diagnosis">
+			</div>
+		  </div>
+		  
+		  <div class="form-group">
+			<label class="control-label col-sm-2" for="date">Date Treatment Started:</label>
+			<div class="col-sm-10">
+			  <input type="text" class="form-control" id="DateTreatmentStarted" placeholder="Date Treatment Started">
+			</div>
+		  </div>
+
+		  <div class="form-group">
+			<label class="control-label col-sm-2" for="Disease">Disease:</label>
+			<div class="col-sm-10">
+			  <input type="text" class="form-control" id="Disease" placeholder="Disease">
+			</div>
+		  </div>
+
+		  <div class="form-group">
+			<label class="control-label col-sm-2" for="Treatment">Treatment:</label>
+			<div class="col-sm-10">
+			  <input type="text" class="form-control" id="Treatment" placeholder="Treatment">
+			</div>
+		  </div>
+
+		  <div class="form-group">
+			<label class="control-label col-sm-2" for="Doctor">Doctor:</label>
+			<div class="col-sm-10">
+			  <input type="text" class="form-control" id="Doctor" placeholder="Doctor">
+			</div>
+		  </div>
+
+			<div class="form-group">
+			<label class="control-label col-sm-2" for="Comments">Comments:</label>
+			<div class="col-sm-10">
+			  <input type="text" class="form-control" id="Comments" placeholder="Comments">
+			</div>
+		  </div>
+	
+		  
+		</form>
+  </div>
+  
+  <div class="container">
+	<p align="center">
+		<button type="button" class="btn btn-info btn-lg" id="patientRegistration"><span class="lyphicon glyphicon-plus"></span> </i>Add More History Items</button>
+	</p>	
+	<p align="center">
+		<button type="button" class="btn btn-info btn-lg" id="patientRegistration">Next</button>
+		
+		<button type="button" class="btn btn-lg btn-danger" id="cancel" onclick="toStartPage()">Cancel</button>
+	</p>
+  </div>
+
+</body>
+</html>
